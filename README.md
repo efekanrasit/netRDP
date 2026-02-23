@@ -16,7 +16,7 @@ Support for English, Turkish, and German languages.
 ![More Options](https://res.cloudinary.com/canonical/image/fetch/q_auto,f_auto,w_860/https://dashboard.snapcraft.io/site_media/appmedia/2026/02/Screenshot_from_2026-02-22_00-20-20-1771708833.png)
 
 
-## İnstall
+## Install
 
 ```bash
 sudo snap install netrdp
