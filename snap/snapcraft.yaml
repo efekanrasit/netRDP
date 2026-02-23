@@ -1,0 +1,65 @@
+name: netrdp
+version: '1.1'
+summary: Dark themed multilingual RDP client based on xfreerdp
+description: |
+  netRDP Client - A dark themed Remote Desktop Protocol client
+  with support for English, Turkish, and German languages.
+  Uses xfreerdp with dynamic resolution support.
+
+title: netRDP Client
+license: MIT
+contact: https://github.com/efekanrasit/netrdp
+website: https://github.com/efekanrasit/netrdp
+
+grade: stable
+confinement: strict
+base: core22
+
+layout:
+  /usr/share/netrdp:
+    bind: $SNAP/usr/share/netrdp
+
+parts:
+  netrdp-app:
+    plugin: dump
+    source: .
+    organize:
+      netrdp.py: usr/share/netrdp/netrdp.py
+      bin/netrdp: usr/bin/netrdp
+      meta/gui/icon.png: meta/gui/icon.png
+      meta/gui/netrdp.desktop: meta/gui/netrdp.desktop
+    stage-packages:
+      - python3
+      - python3-gi
+      - python3-gi-cairo
+      - gir1.2-gtk-3.0
+      - libgtk-3-0
+      - freerdp2-x11
+      - libfreerdp2-2
+      - adwaita-icon-theme
+      - dbus-x11
+      - libcanberra-gtk3-module
+      - librsvg2-common
+      - gsettings-desktop-schemas
+    override-prime: |
+      craftctl default
+      rm -f etc/pulse/client.conf.d/01-enable-autospawn.conf
+
+apps:
+  netrdp:
+    command: usr/bin/netrdp
+    desktop: meta/gui/netrdp.desktop
+    extensions: [gnome]
+    environment:
+      PYTHONPATH: $SNAP/usr/lib/python3/dist-packages
+      GI_TYPELIB_PATH: $SNAP/usr/lib/x86_64-linux-gnu/girepository-1.0
+      LD_LIBRARY_PATH: $SNAP/usr/lib/x86_64-linux-gnu:$SNAP/usr/lib
+      GTK_THEME: Adwaita:dark
+      DISABLE_WAYLAND: 1
+    plugs:
+      - network
+      - network-bind
+      - home
+      - audio-playback
+      - audio-record
+      - opengl

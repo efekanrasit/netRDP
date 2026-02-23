@@ -1,0 +1,13 @@
+[Desktop Entry]
+Version=1.2
+Type=Application
+Name=netRDP Client
+GenericName=Remote Desktop Client
+Comment=Dark themed RDP client
+Icon=${SNAP}/meta/gui/icon.png
+Exec=netrdp
+Terminal=false
+Categories=Network;RemoteAccess;
+Keywords=rdp;remote;desktop;freerdp;
+StartupNotify=true
+X-SnapInstanceName=netrdp

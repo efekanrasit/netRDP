@@ -1,0 +1,2 @@
+#!/bin/bash
+exec python3 $SNAP/usr/share/netrdp/netrdp.py "$@"
