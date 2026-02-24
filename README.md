@@ -7,7 +7,7 @@ Dark themed RDP client based on xfreerdp
 netRDP Client - A dark themed Remote Desktop Protocol client
 similar to Windows Remote Desktop Connection.
 Uses xfreerdp with dynamic resolution support.
-Support for English, Turkish, and German languages.
+Support for English, Turkish, German, Russian languages.
 
 ## Screenshots
 

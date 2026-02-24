@@ -1,0 +1,351 @@
+* {
+    font-family: "Segoe UI", "Ubuntu", Sans;
+}
+
+window {
+    background-color: #1f1f1f;
+}
+
+/* Banner */
+.banner {
+    background-color: #2b2b2b;
+    padding: 18px 20px 16px 20px;
+    border-width: 0 0 1px 0;
+    border-style: solid;
+    border-color: #3a3a3a;
+}
+
+.banner-title {
+    color: #8ab4d4;
+    font-size: 15px;
+    font-weight: normal;
+}
+
+.banner-subtitle {
+    color: #5d9ec8;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Form */
+.form-area {
+    background-color: #1f1f1f;
+    padding: 22px 28px 18px 28px;
+}
+
+.field-label {
+    color: #b0b0b0;
+    font-size: 13px;
+}
+
+.hint-label {
+    color: #606060;
+    font-size: 12px;
+}
+
+entry {
+    background-color: #2d2d2d;
+    color: #e8e8e8;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #4a4a4a;
+    border-radius: 3px;
+    padding: 6px 10px;
+    font-size: 13px;
+}
+
+entry:focus {
+    border-color: #0078d4;
+    background-color: #303040;
+}
+
+/* Options panel */
+.options-area {
+    background-color: #181818;
+    padding: 16px 28px 18px 28px;
+    border-width: 1px 0 0 0;
+    border-style: solid;
+    border-color: #2a2a2a;
+}
+
+.section-label {
+    color: #707070;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+checkbutton {
+    color: #b0b0b0;
+    background-color: transparent;
+    font-size: 12px;
+}
+
+checkbutton check {
+    background-color: #2d2d2d;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #4a4a4a;
+    border-radius: 2px;
+    min-width: 14px;
+    min-height: 14px;
+}
+
+checkbutton:checked check {
+    background-color: #0078d4;
+    border-color: #0078d4;
+}
+
+checkbutton label {
+    color: #b0b0b0;
+}
+
+checkbutton:hover label {
+    color: #e0e0e0;
+}
+
+/* Button bar */
+.button-bar {
+    background-color: #252525;
+    padding: 12px 20px;
+    border-width: 1px 0 0 0;
+    border-style: solid;
+    border-color: #333333;
+}
+
+/* Connect button */
+.btn-connect {
+    background-color: #0078d4;
+    color: #ffffff;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #006cc0;
+    border-radius: 3px;
+    padding: 7px 22px;
+    font-size: 13px;
+    min-width: 90px;
+}
+
+.btn-connect:hover {
+    background-color: #1a8ee0;
+    border-color: #0078d4;
+}
+
+.btn-connect:active {
+    background-color: #005fa3;
+}
+
+.btn-connect:disabled {
+    background-color: #1a3a50;
+    color: #405060;
+    border-color: #1a3a50;
+}
+
+/* Cancel / secondary button */
+.btn-cancel {
+    background-color: #2d2d2d;
+    color: #c8c8c8;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #4a4a4a;
+    border-radius: 3px;
+    padding: 7px 22px;
+    font-size: 13px;
+    min-width: 90px;
+}
+
+.btn-cancel:hover {
+    background-color: #363636;
+    color: #ffffff;
+    border-color: #606060;
+}
+
+.btn-cancel:active {
+    background-color: #222222;
+}
+
+/* Options toggle */
+.btn-options {
+    background-color: transparent;
+    color: #707070;
+    border-width: 0;
+    border-radius: 2px;
+    padding: 5px 8px;
+    font-size: 12px;
+}
+
+.btn-options:hover {
+    background-color: #2a2a2a;
+    color: #a0a0a0;
+}
+
+.btn-options:checked {
+    color: #8ab4d4;
+}
+
+/* Saved connections list */
+.saved-row {
+    background-color: #252525;
+    padding: 10px 16px;
+    border-width: 0 0 1px 0;
+    border-style: solid;
+    border-color: #2e2e2e;
+}
+
+row:hover .saved-row {
+    background-color: #2e3a48;
+}
+
+row:selected {
+    background-color: #1a3a55;
+}
+
+.saved-host {
+    color: #d0d0d0;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.saved-user {
+    color: #606060;
+    font-size: 11px;
+}
+
+.btn-load {
+    background-color: transparent;
+    color: #5090b8;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #304860;
+    border-radius: 3px;
+    padding: 4px 12px;
+    font-size: 11px;
+}
+
+.btn-load:hover {
+    background-color: #1a3a55;
+    color: #8ab4d4;
+    border-color: #4a7090;
+}
+
+.btn-del {
+    background-color: transparent;
+    color: #503030;
+    border-width: 0;
+    border-radius: 3px;
+    padding: 4px 8px;
+    font-size: 13px;
+}
+
+.btn-del:hover {
+    background-color: #3a1515;
+    color: #cc4444;
+}
+
+.btn-order {
+    background-color: transparent;
+    color: #404040;
+    border-width: 0;
+    border-radius: 2px;
+    padding: 1px 5px;
+    font-size: 9px;
+    min-width: 18px;
+    min-height: 14px;
+}
+
+.btn-order:hover {
+    background-color: #2a3a4a;
+    color: #8ab4d4;
+}
+
+.btn-order:disabled {
+    color: #2a2a2a;
+}
+
+/* Status bar */
+.statusbar {
+    background-color: #161616;
+    padding: 5px 20px;
+    border-width: 1px 0 0 0;
+    border-style: solid;
+    border-color: #2a2a2a;
+}
+
+.status-text {
+    color: #505050;
+    font-size: 11px;
+}
+
+.status-ok {
+    color: #0078d4;
+    font-size: 11px;
+}
+
+.status-error {
+    color: #c0392b;
+    font-size: 11px;
+}
+
+.status-connecting {
+    color: #e67e22;
+    font-size: 11px;
+}
+
+.count-label {
+    color: #404040;
+    font-size: 11px;
+}
+
+/* Notebook tabs */
+notebook {
+    background-color: #1f1f1f;
+}
+
+notebook header {
+    background-color: #1f1f1f;
+    border-width: 0 0 1px 0;
+    border-style: solid;
+    border-color: #333333;
+    padding: 0 8px;
+}
+
+notebook tab {
+    background-color: #1f1f1f;
+    color: #707070;
+    padding: 9px 18px;
+    border-width: 0;
+    font-size: 12px;
+}
+
+notebook tab:checked {
+    background-color: #1f1f1f;
+    color: #8ab4d4;
+    border-width: 0 0 2px 0;
+    border-style: solid;
+    border-color: #0078d4;
+}
+
+notebook tab:hover {
+    background-color: #282828;
+    color: #a0a0a0;
+}
+
+scrolledwindow {
+    background-color: #1f1f1f;
+    border-width: 0;
+}
+
+combobox button {
+    background-color: #2d2d2d;
+    color: #e8e8e8;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #4a4a4a;
+    border-radius: 3px;
+    padding: 6px 10px;
+    font-size: 12px;
+}
+
+combobox button:hover {
+    border-color: #0078d4;
+    background-color: #303040;
+}
