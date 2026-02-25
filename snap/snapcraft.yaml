@@ -25,8 +25,8 @@ parts:
     source: .
     organize:
       netrdp.py: usr/share/netrdp/netrdp.py
-      netrdp_style.css: usr/share/netrdp_style.css
-      translations.json: usr/share/translations.json
+      netrdp_style.css: usr/share/netrdp/netrdp_style.css
+      translations.json: usr/share/netrdp/translations.json
       bin/netrdp: usr/bin/netrdp
       meta/gui/icon.png: meta/gui/icon.png
       meta/gui/netrdp.desktop: meta/gui/netrdp.desktop
