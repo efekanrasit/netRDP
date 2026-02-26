@@ -2,6 +2,8 @@
 
 Dark themed RDP client based on xfreerdp
 
+[![Get it from the Snap Store](https://snapcraft.io/en/dark/install.svg)](https://snapcraft.io/netrdp)
+
 ## Features
 
 netRDP Client - A dark themed Remote Desktop Protocol client
